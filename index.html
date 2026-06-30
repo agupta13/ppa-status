@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="300">
+<title>PPA · system health</title>
+<style>
+ :root { color-scheme: light dark; }
+ body { font: 15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+   max-width: 760px; margin: 2rem auto; padding: 0 1rem; color: #1f2328; }
+ @media (prefers-color-scheme: dark) { body { color:#e6edf3; background:#0d1117; }
+   .card { background:#161b22; } }
+ h1 { font-size: 1.4rem; margin: 0 0 .2rem; }
+ .status { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.4rem; }
+ h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em;
+   color: #6e7781; margin: 1.8rem 0 .6rem; }
+ table { width: 100%; border-collapse: collapse; }
+ td { padding: .45rem .2rem; border-bottom: 1px solid rgba(128,128,128,.18); }
+ td.age { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+ .muted { color: #6e7781; font-size: .9em; }
+ .cards { display: flex; gap: .8rem; flex-wrap: wrap; }
+ .card { flex: 1 1 160px; border: 1px solid rgba(128,128,128,.2);
+   border-radius: 8px; padding: .7rem 1rem; }
+ .card .k { font-size: .8rem; color: #6e7781; }
+ .card .v { font-size: 1.6rem; font-weight: 600; }
+ ul { list-style: none; padding: 0; margin: 0; }
+ li { padding: .35rem 0; border-bottom: 1px solid rgba(128,128,128,.12); }
+ li .t { font-variant-numeric: tabular-nums; color: #6e7781; margin-right: .4rem; }
+ footer { margin-top: 2rem; color: #6e7781; font-size: .82rem; }
+</style></head><body>
+<h1>PPA · system health</h1>
+<div class="status"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>All systems nominal</div>
+
+<h2>Pipeline stages</h2>
+<table><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>Plaud capture · hourly</td><td class="age">78m ago</td><td class="muted">217 transcripts cached</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>Daily synthesis · daily</td><td class="age">11h ago</td><td class="muted">latest 2026-06-30</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>Drive transcript push</td><td class="age">16m ago</td><td class="muted">170 docs in Drive</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>brain sync · plaud</td><td class="age">42m ago</td><td class="muted">+6 new · degraded</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>brain sync · gmail</td><td class="age">26m ago</td><td class="muted">+2 new</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>brain sync · github</td><td class="age">26m ago</td><td class="muted">+0 new</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>brain sync · local_repo</td><td class="age">26m ago</td><td class="muted">+0 new</td></tr><tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span>brain sync · slack</td><td class="age">89m ago</td><td class="muted">+4 new</td></tr></table>
+
+<h2>Google Drive corpus</h2>
+<div class="cards"><div class="card"><div class="k">Synthesis journal</div><div class="v">1</div><div class="muted">latest 2026-06-30</div></div><div class="card"><div class="k">Transcripts in Drive</div><div class="v">170</div><div class="muted">8 months</div></div></div>
+
+<h2>Recent activity</h2>
+<ul><li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 30 23:16Z</span> <b>drive-push</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— +0 new · 1 total</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 30 23:16Z</span> <b>drive-push</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— +1 new · 1 total</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 30 23:14Z</span> <b>drive-push</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— +0 new · 1 total</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 30 23:14Z</span> <b>drive-push</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— +1 new · 1 total</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 30 12:00Z</span> <b>daily-synthesis</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— 1 projects · 224 chars</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 30 12:00Z</span> <b>daily-synthesis</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— 1 projects · 224 chars</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 19 12:00Z</span> <b>cycle</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— brain sync ok</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 19 12:00Z</span> <b>cycle</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— brain sync ok</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#cf222e;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 19 12:00Z</span> <b>cycle</b> <span style="color:#cf222e;font-size:.85em">fail</span> <span class="muted">— 1 sync errors</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 19 12:00Z</span> <b>cycle</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— brain sync ok</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1a7f37;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 19 12:00Z</span> <b>cycle</b> <span style="color:#1a7f37;font-size:.85em">ok</span> <span class="muted">— brain sync ok</span></li>
+<li><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#cf222e;margin-right:6px;vertical-align:middle"></span><span class="t">Jun 19 12:00Z</span> <b>cycle</b> <span style="color:#cf222e;font-size:.85em">fail</span> <span class="muted">— 1 sync errors</span></li></ul>
+
+<footer>Generated 2026-06-30T23:33:15.206487+00:00Z · auto-refreshes every 5&nbsp;min ·
+counts &amp; timestamps only, no content.</footer>
+</body></html>
